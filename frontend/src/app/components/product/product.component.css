@@ -1,0 +1,72 @@
+.container{
+    margin-top: 20px;
+    padding: 30px;
+    max-width: 80%;
+    background-color: #FBC7CB;
+}
+
+.container .search{
+    margin-bottom: 20px !important;
+}
+
+.container .search input{
+    height: 50px;
+}
+
+.container .search input::placeholder{
+    color: #AC54A0;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Rancho';
+}
+
+.container form button{
+    height: 50px;
+    background-color: #FFFFFF;
+    font-family: 'Rancho';
+    color: #AC54A0;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.container form button:hover{
+    background-color: #ff95f1;
+}
+
+.container table{
+    background-color: #FFFFFF;
+}
+
+.container table thead{
+    font-family: 'Rancho';
+    color: #AC54A0;
+    font-size: 25px;
+}
+
+table tbody .btn{
+    height: 50px;
+    background-color: #FBC7CB;
+    font-family: 'Rancho';
+    color: #AC54A0;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+table .icon-trash{
+    width: 10%;
+    text-align: center;
+}
+
+.container table tbody tr{
+    font-family: 'Rancho';  
+    font-size: 22px; 
+}
+
+
+.container table tbody tr div{
+    justify-content: center;
+}
+
+.container table tbody tr:hover{
+    background-color: #fde0e3;
+}

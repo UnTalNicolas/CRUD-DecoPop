@@ -1,0 +1,53 @@
+<div class="container">
+    <!-- Buscador -->
+    <form  class="form-inline my-2 my-lg-0 search">
+        <div ></div>
+        <input (keyup)='searchProduct($event);' class="form-control mr-sm-2" placeholder="Filtrar">
+    </form>
+    <!-- Tabla -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">PRODUCTO</th>
+                <th scope="col">CATEGORIA</th>
+                <th scope="col">OFERTA</th>                
+                <th scope="col">VALOR</th>
+                <th scope="col" class="icon-trash">
+                    <i class="fas fa-upload"></i>
+                </th>
+                <th scope="col" class="icon-trash">
+                    <i class="far fa-trash-alt"></i>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let prod of allProduct'>
+                <th>{{prod._id}}</th>
+                <td>{{prod.nombre}}</td>
+                <td>{{prod.categoria}}</td>
+                <td>{{prod.oferta}}</td>
+                <td>{{prod.valor}} Cop</td>
+                <td class="icon-trash">
+                    <a routerLink='/up-product/{{prod._id}}' class="btn">Editar</a>
+                </td>
+                <td class="icon-trash">
+                    <a routerLink='/delete-product/{{prod._id}}' class="btn">Eliminar</a>
+                </td>
+            </tr>
+            <tr *ngFor='let pro of dataProduct'>
+                <th>{{pro._id}}</th>
+                <td>{{pro.nombre}}</td>
+                <td>{{pro.categoria}}</td>
+                <td>{{pro.oferta}}</td>
+                <td>{{pro.valor}} Cop</td>
+                <td class="icon-trash">
+                    <a routerLink='/up-product/{{pro._id}}' class="btn">Editar</a>
+                </td>
+                <td class="icon-trash">
+                    <a routerLink='/delete-product/{{pro._id}}' class="btn">Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

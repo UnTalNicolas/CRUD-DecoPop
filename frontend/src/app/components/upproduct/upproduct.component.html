@@ -1,0 +1,43 @@
+<div class="main row">
+    <div class="col-7">
+        <img src="../../../assets/Decopop.png" alt="">
+    </div>
+    <div class="col-5">
+        <div class="title mb-4">
+            <h1>Modifica cualquier producto de tu inventario</h1>
+            <h5>Debes llenar todos los espacios</h5>
+        </div>
+        <form #productUpDateForm='ngForm' (ngSubmit)='updateProduct();' > 
+            <div class="form-group">
+                <label for="ppal">Id del producto</label>
+                <input type="text" id="ppal" name="ppal" #ppal='ngModel' [(ngModel)]='product._id' class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label for="product">Nuevo nombre del producto</label>
+                <input type="text" id="nombre" name="nombre" #nombre='ngModel' [(ngModel)]='product.nombre' class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="category">Nueva categoria</label>
+                <select class="form-control" id="categoria" name="categoria" #categoria='ngModel' [(ngModel)]='product.categoria'>
+                    <option> ... </option>
+                    <option>Producto - DecoParty</option>
+                    <option>Producto - DecoGif</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sale">Producto en Oferta</label>
+                <select class="form-control" id="oferta" name="oferta" #oferta='ngModel' [(ngModel)]='product.oferta'>
+                    <option> ... </option>
+                    <option>Si</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cost">Valor del producto</label>
+                <input type="number" id="valor" name="valor" #valor='ngModel' [(ngModel)]='product.valor' class="form-control">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Modifique el producto </button>
+        </form>
+    </div>
+</div>

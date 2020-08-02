@@ -1,0 +1,132 @@
+.slide img{
+    width: 100vw;
+    height: 90vh;
+}
+
+/* Cards */
+.container{
+    max-width: 80%;
+}
+
+.card-body .card-title{
+    font-family: 'Dancing Script';
+    font-size: 80px;
+    font-weight: bold;
+    color: #AC54A0;
+}
+
+.card-body .card-text{
+    font-family: 'Rancho';
+    font-size: 40px;
+    color: #AC54A0;
+    line-height: 45px;
+}
+
+.card-body .btn{
+    width: 350px;
+    height: 100px;
+    background-color: #FBC7CB;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    font-weight: bold;
+    color: #AC54A0;
+}
+
+/* Info US */
+
+.main-us{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #DFDFDF;
+}
+
+.container .title{
+    color: #AC54A0;
+    font-family: 'Dancing Script';
+    font-size: 60px;
+}
+
+.container .row .border-right{
+    border-right-color: #AC54A0 !important;
+    border-right-width: 2px !important;
+}
+
+.container .trj-icon i{
+    font-size: 40px;
+    color: #AC54A0;
+    margin-bottom: 20px;
+}
+
+.container form .form-group input::placeholder{
+    color: #AC54A0;
+    font-style: 25px;
+    font-weight: 500;
+    font-family: 'Rancho';
+}
+
+.container form .form-group input:focus{
+    border: 1px solid #AC54A0;
+    box-shadow: 5px 5px #AC54A0;
+}
+
+.container form .form-group textarea::placeholder{
+    color: #AC54A0;
+    font-weight: 500;
+    font-family: 'Rancho';
+}
+
+.container form .form-group textarea:focus{
+    border: 1px solid #AC54A0;
+    box-shadow: 5px 5px #AC54A0;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.container form .btn{
+    width: 50%;
+    font-family: 'Rancho';
+    color: #AC54A0;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.btn{
+    background-color: rgba(251, 199, 203, .8);
+    border-color: #FBC7CB;
+}
+
+.btn:hover{
+    background-color: rgba(251, 199, 203, 1);
+}
+
+/* Icons */
+
+.container .trj-icon i{
+    font-size: 60px;
+    color: #AC54A0;
+    margin-bottom: 20px;
+}
+
+.container .trj-icon p{
+    font-size: 25px;
+    font-family: 'Rancho';
+    margin-bottom: 20px;
+}
+
+.container .trj-icon a{
+    font-size: 30px;
+    font-family: 'Rancho';
+    margin-bottom: 20px;
+    color: #6C757D;
+    text-decoration: none;
+}
+
+.container .trj-icon a:hover>i{ 
+    color: #FBC7CB;
+}
